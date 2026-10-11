@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#A99BF5">
+<title>Streakline — Habit Tracker</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head>
+<body data-page="dash"><a class="skip" href="#app">Skip to content</a>
+<header class="mbar">
+ <button class="ib menuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="drawer"><span class="bars3" aria-hidden="true"></span></button>
+ <a class="logo" href="index.html"><span aria-hidden="true">◉</span><b class="lb">Streakline</b></a>
+ <button class="ib themeBtn" type="button" aria-label="Toggle theme">◐</button>
+</header>
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" aria-label="Menu">
+ <div class="drawer-head"><a class="logo" href="index.html"><span aria-hidden="true">◉</span><b class="lb">Streakline</b></a><button class="ib" id="drawerClose" type="button" aria-label="Close menu">✕</button></div>
+ <a href="#dashboard" data-v="dashboard"><i aria-hidden="true">▦</i><span class="lb">Dashboard</span></a>
+ <a href="#habits" data-v="habits"><i aria-hidden="true">☰</i><span class="lb">All Habits</span></a>
+ <a href="#analytics" data-v="analytics"><i aria-hidden="true">▤</i><span class="lb">Analytics</span></a>
+ <a href="#settings" data-v="settings"><i aria-hidden="true">⚙</i><span class="lb">Settings</span></a>
+ <button class="btn" type="button" data-act="new">+ New habit</button>
+ <button class="btn ghost themeBtn" type="button"><i aria-hidden="true">◐</i><span class="lb">Switch theme</span></button>
+</aside>
+<div class="shell">
+<nav class="side" aria-label="Main"><a class="logo" href="index.html"><span aria-hidden="true">◉</span><b class="lb">Streakline</b></a>
+ <a href="#dashboard" data-v="dashboard" title="Dashboard"><i aria-hidden="true">▦</i><span class="lb">Dashboard</span></a>
+ <a href="#habits" data-v="habits" title="All Habits"><i aria-hidden="true">☰</i><span class="lb">All Habits</span></a>
+ <a href="#analytics" data-v="analytics" title="Analytics"><i aria-hidden="true">▤</i><span class="lb">Analytics</span></a>
+ <a href="#settings" data-v="settings" title="Settings"><i aria-hidden="true">⚙</i><span class="lb">Settings</span></a>
+ <button class="btn ghost themeBtn" type="button" title="Switch theme"><i aria-hidden="true">◐</i><span class="lb">Theme</span></button>
+ <button class="btn ghost collapseBtn" id="collapseBtn" type="button" aria-pressed="false" aria-label="Collapse sidebar"><i aria-hidden="true">«</i><span class="lb">Collapse</span></button>
+</nav>
+<main id="app" tabindex="-1"></main></div>
+<button class="fab" id="fab" type="button" aria-label="New habit">+</button>
+<div id="toast" role="status" aria-live="polite"></div>
+<script src="script.js"></script></body></html>
